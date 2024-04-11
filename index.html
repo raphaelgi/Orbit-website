@@ -11,7 +11,58 @@
             color: #fff;
             margin: 0;
             padding: 0;
+            animation: fadeIn ease 2s;
+            -webkit-animation: fadeIn ease 2s;
+            -moz-animation: fadeIn ease 2s;
+            -o-animation: fadeIn ease 2s;
+            -ms-animation: fadeIn ease 2s;
         }
+
+        @keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+
+        @-moz-keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+
+        @-o-keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+
+        @-ms-keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+
         .navbar {
             background-color: #7289DA;
             padding: 15px 0;
@@ -37,7 +88,7 @@
             font-size: 18px;
             line-height: 1.6;
         }
-        .btn-invite {
+        .btn-invite, .btn-info {
             padding: 10px 20px;
             font-size: 16px;
             background-color: #7289DA;
@@ -47,8 +98,9 @@
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s;
+            margin-right: 10px;
         }
-        .btn-invite:hover {
+        .btn-invite:hover, .btn-info:hover {
             background-color: #5b6eae;
         }
         .footer {
@@ -71,8 +123,13 @@
     </div>
     <div class="container" id="generator">
         <h1>Welcome to Orbit Gen Discord Server</h1>
-        <p>Join our Discord server to stay updated on the lastest news of orbit gen:</p>
+        <p>Join our Discord server to connect with other members and stay updated:</p>
         <a class="btn-invite" href="https://discord.gg/8DC5gPyx8s">Join Discord Server</a>
+        <a class="btn-info" href="#">Information</a>
+    </div>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Orbit Gen is a platform where you can generate premium and free Roblox accounts. Our mission is to provide users with access to Roblox accounts for their gaming needs.</p>
     </div>
     <div class="footer">
         <p>&copy; 2024 Orbit Gen. All rights reserved.</p>
